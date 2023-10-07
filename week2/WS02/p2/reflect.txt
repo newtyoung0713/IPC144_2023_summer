@@ -1,0 +1,42 @@
+///////////////////////////////////////////////////////////////////////////
+                              Reflection
+                          Workshop - #2 (P2)
+Full Name  : Sheng-Lin Yang
+Student ID#: 160443222
+Email      : syang153@myseneca.ca
+Section    : B
+
+Authenticity Declaration:
+
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1. Execute the above sample code on your machine. Briefly explain why price1 and the corresponding converted cent value does not properly represent the intended value. Why do you think all the other samples work as expected?
+
+
+
+2. Explain why these three examples work as intended. Apply terms like cast, promotion, coercion, implicit, and explicit in your answer.
+
+These three examples are all division with float or double tyep to cast from int to double.
+Like first one type the number as float that has .0 after the number 100,
+The second one coercions the variable, money, from int to double,
+The third one is the same as the second one, to transfer the MONEY from int to double explicitly
+
+3. Apply terms like cast, promotion, truncation, coercion, implicit, and explicit in answering the following questions.
+
+a) What is the value of the variable result? Explain why.
+The program is not allow int to double form, so the result will be 0.00,
+and the result for 2 and 4 will have the properly number because of using int to the right form.
+
+b) What values are displayed for samples 1, 2, 3, and 4?
+The values for 1 to 4 are:
+1. $0.00
+2. $72
+3. $0.00
+4. $72
+
+c) What can you conclude about the printf function that causes samples 1 and 3 not to work as expected?
+From this result, because of C is a type programming language, using the right type with the form,
+or casting the type into others to match the form, then we may see the result as we want.
