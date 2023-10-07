@@ -1,0 +1,30 @@
+///////////////////////////////////////////////////////////////////////////
+
+                              Reflection
+                             Workshop - #1
+Full Name  : Sheng-Lin Yang
+Student ID#: 160443222
+Email      : syang153@myseneca.ca
+Section    : B
+
+Authenticity Declaration:
+
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+
+
+1. Do you have any previous programming experience? If so, what language(s)? If not, what are your initial
+thoughts about the C language and this course?
+
+A:  Had an experience with Python.
+
+2. Describe your understanding of the compiling process of turning a C text file into an executable program.
+
+A:  We type in English-like words in the C file, and when we compile it, it will turn anything into 0 and 1 and the computer can know what we type in.
+
+3. What do you hope to achieve in this course? Describe your goals and expectations.
+
+A:  I wish I can get a B+ at least, and strong my ability about C, then get a coop opportunity after 2nd semester.
