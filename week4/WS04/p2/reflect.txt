@@ -1,0 +1,50 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #4
+Full Name  : Sheng-Lin Yang
+Student ID#: 160443222
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1. With the completion of this workshop, you must have begun to appreciate 
+   why code formatting is important. Explain how you made your code – 
+   especially the iteration and selection logic parts – easy to read and maintain.
+
+A) I chose do-while for the outside loop because of I could run the program at least once.
+   If the input is not correct or 
+   if does not required the condition to quit the loop, the program has to repeat.
+   For the selection part, I tried to use the human way instead of De Morgan's law, 
+   and it would be easy to read and maintain.
+
+   I used new line to seperate different block of code, and used four space key to organize the program
+   and to maintain it clean.
+   
+2. Nested logic is an important feature of programming in any language. 
+   Identify and briefly discuss the biggest impact on how this workshop 
+   could be coded if nesting were not possible.
+
+A) I do not think it will be work if we can not use nesting logic.
+   Because of the code will be more massive than nesting, 
+   such as how to repeat the input, and how to quit the program if we use specific way.
+   Also, we have to use many loops for outputs.
+   The biggest impact will be how we repeat some factors easily.
+  
+3. Consider the following scenario: you are programming logic that 
+   requires a user to input a value between 1 and 5, 
+   and for each value within that range, you had to perform something unique. 
+   You would have to apply selection to validate the entered values 
+   so you can implement the given logic for a specific entered range value. 
+   Explain why is it inefficient to achieve this using a series of "if" optional path constructs 
+   instead of the preferred “if/else if...” alternative path logic?
+
+A) If there are many exceptions after the user typed invalid number,
+   and only use "if" will have massive "if(s)" to code exceptions,
+   but use "if/ else if" will judge by the sequences and will be easy to code exceptions.
+   Because of the computer runs the program sequence, and will check every single "if/ else if",
+   until it runs to the first satisfiable, 
+   and if any conditions becomes true, then the program will stop.
+   If we use "if" for everything, then the computer will check every "if" seriously.
