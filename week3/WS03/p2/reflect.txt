@@ -1,0 +1,72 @@
+///////////////////////////////////////////////////////////////////////////
+                              Reflection
+                          Workshop - #3 (P2)
+Full Name  : Sheng-Lin Yang
+Student ID#: 160443222
+Email      : syang153myseneca.ca
+Section    : B
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1. Determining the customer preference based on the number of servings
+ to the available coffee bag weights required a more complex logical expression.
+  Copy your submitted code for only this part of the logic, and explain the following:
+
+((weight1 == 250) && (servingCream >= 1 && servingCream <= 4)) ||
+((weight1 == 500) && (servingCream >= 5 && servingCream <= 9)) ||
+((weight1 == 1000) && (servingCream >= 10))
+
+A) How many relational expressions did you use and identify each of them.
+I identified eight relational expressions in this part.
+
+1st) weight1 == 250
+2nd) servingCream >= 1
+3rd) servingCream <= 4
+4th) weight1 == 500
+5th) servingCream >= 5
+6th) servingCream <= 9
+7th) weight1 == 1000
+8th) servingCream >= 10
+
+B) How many logical expressions did you use and identify each of them.
+I identified seven logical expressions in this part.
+
+1st & 2nd & 3rd) (weight1 == 250) && (servingCream >= 1 && servingCream <= 4) ||
+4th & 5th & 6th) (weight1 == 500) && (servingCream >= 5 && servingCream <= 9) ||
+7th) (weight1 == 1000) && (servingCream >= 10)
+
+2. Referring to Part-1 output #9, show how that logic can be coded in TWO correct ways,
+ one applying DeMorgan’s Law and the other way not using DeMorgan’s Law.
+  Also, identify what method you used in your submitted answer for Part-1.
+
+1) printf("9. Based on product ID, product 3 is unique -> %d\n",
+         (thirdId != firstId) && (thirdId != secondId));
+
+2) printf("9. Based on product ID, product 3 is unique -> %d\n",
+         !((thirdId == firstId) || (thirdId == secondId)));
+
+3. Using the variables you used in Part-2, demonstrate two ways you can organize them,
+ so it is optimized for easy to maintain code
+  and contributes towards clarity in how data is stored in the program.
+
+1)  // for the first table
+    char id1typeCoffee, id2typeCoffee, id3typeCoffee;
+    int weight1, weight2, weight3;
+    char coffeeCream1, coffeeCream2, coffeeCream3;
+
+    // for the second and third table
+    char coffeePrefer, cream;
+    int servingCream;
+
+2)  // for all the char variables
+    char id1typeCoffee, id2typeCoffee, id3typeCoffee;
+    char coffeeCream1, coffeeCream2, coffeeCream3;
+    char coffeePrefer, cream;
+
+    // for all the int variables
+    int weight1, weight2, weight3;
+    int servingCream;
