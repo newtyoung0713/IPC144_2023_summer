@@ -1,0 +1,44 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #6
+Full Name  : Sheng-Lin Yang
+Student ID#: 160443222
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+1. Why are there three types of iteration constructs 
+   if we can make any one of them behave the same way? 
+   Refer to your code in this workshop to help backup your answer 
+   (do NOT include the code in your answer). 
+   Typically, when working with arrays, 
+   there is one iteration construct we favour – 
+   what is it and explain why it is more preferred over the other options.
+
+A) People use FOR loop for this workshop mostly because we have the terminal value as macro has.
+   However, if we use DO-WHILE or WHILE, then we have to set a condition to stop the loop, 
+   and increasing a value to stop the iteration properly.
+   Even we coded for DO-WHILE or WHILE nicely, but the program might be poor readability.
+   Moreover, it might be maintain hardly.
+
+2. Describe what you did to both test and debug your program. 
+   How did you go about finding where the problems were located 
+   (explain how you did this for both syntactic and semantic problems)?
+
+A) When I saw there were error messages for syntactic or semantic problems,
+   I would check them first, then found where the lines are.
+   Furthermore, modified them one on one, such as type different, lack of a seme-colon,
+   or other problems from syntactic or semantic.
+
+3. Using the above explicit information, 
+   explain each step you must take to successfully identify and fix your error.
+
+A) To begin with the problem comes out, then check what the problem is.
+   For this case is OUTPUTS DO NOT MATCH, so that may have two situations we need to think about.
+   Either input was wrong, or the code was wrong.
+   But for the problem here is about outputs do not match.
+   So I will re-run the program, and type the accurate number for the input.
+   And I think the problem will be solving and running successfully.
