@@ -1,0 +1,53 @@
+///////////////////////////////////////////////////////////////////////////
+                               Reflection
+                             Workshop - #8
+Full Name  : Sheng-Lin Yang
+Student ID#: 160443222
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+///////////////////////////////////////////////////////////////////////////
+
+
+1. Several helper functions were designed to return values in two different ways 
+   (via an argument and/or by return). 
+   Explain at least one benefit of this “feature” and how it increases usability/flexibility 
+   and at least one negative reason 
+   why having functions designed to work in this way may not be desirable.
+Ans:
+   The advantage will be we can have more options 
+   to choose from when using these functions in different contexts.
+
+   The disadvantage will be the same as advantage,
+   that increased complexity and confusion.
+   Even we have more options to return the values, but since we use them,
+   it can also introduce complexity and confusion if we do not used them carefully.
+
+2. According to the design principles for structured design, 
+   functions should be highly cohesive and have low coupling. 
+   Identify one function in the workshop that demonstrates less than perfect cohesion, 
+   and one function that demonstrates coupling that could be improved. 
+   For each identified function, 
+   briefly explain what you would do to improve them.
+Ans:
+   For the cohesion part, I think the function, convertLbs, isn't good enough
+   because we have to connect from No.8 and No.9, then connect with other functions.
+   If we want to make it better, then we should do like this way:
+   	double cvtKg = *pounds / CVT_LBSKG;
+		int cvtGram = (*pounds / CVT_LBSKG) * 1000;
+
+   For the coupling part, I think the function, displayReportData, isn't good enough,
+   we have to calculate the value and to compare which one is the cheapest,
+   then return the value back to the function, then make if selection to print it out.
+   So we may do the cheapest value inside of the function, displayReportData,
+   and this way will make it better, and no coupling problem.
+
+3. What advantages are there in passing structures to functions? 
+   Based on your readings this week (for next week’s topics) 
+   what could be done in the passing of this data to functions to make it more efficient? 
+   Explain how the “displayCatfoodData” function could be improved.
+Ans:
+   we don't need to catch the value from each, instead we use the whole structure and can take
+   the exactly value from it.
