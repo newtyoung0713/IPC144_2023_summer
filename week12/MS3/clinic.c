@@ -416,7 +416,6 @@ void removePatient(struct Patient patient[], int max) {
 // View ALL scheduled appointments
 // Todo:
 void viewAllAppointments(struct ClinicData* data) {
-   // maxPatient = 20, maxAppointments = 50
    int i, j;
    // To sort appointments order
    bubbleSort(data->appointments, data->maxAppointments);
@@ -457,7 +456,6 @@ void viewAppointmentSchedule(struct ClinicData* data) {
 // Todo:
 void addAppointment(struct Appointment* appoints, int maxAppointments, 
                     struct Patient* patients, int maxPatient) {
-   // maxPatient = 20, maxAppointments = 50
    struct Date date;
    struct Time time;
    int patientNum, i, flag = 0, index = 0, getIndex, valid = 1;
@@ -490,7 +488,6 @@ void addAppointment(struct Appointment* appoints, int maxAppointments,
                i++;
                valid = 1;
                flag = 1;
-            // printf("compare i=%d, valid=%d, flag=%d\n", i + 1, valid, flag);
             } else {
                valid = 0;
                flag = 1;
@@ -505,17 +502,6 @@ void addAppointment(struct Appointment* appoints, int maxAppointments,
                valid = 1;
                flag = 1;
             }
-
-         // for (i = 0; date.year != appoints[i].date.year ||
-         //          date.month != appoints[i].date.month ||
-         //          date.day != appoints[i].date.day; i++) {
-         //    for (j = i; time.hour != appoints[j].time.hour ||
-         //                time.min != appoints[j].time.min; j++) {
-         //    printf("compare i=%d, valid=%d, flag=%d\n", i + 1, valid, flag);
-         //       // valid = 0;
-         //       // flag = 1;
-         //    }
-         // } 
                   
          printf("1st valid=%d, flag=%d\n", valid, flag);
          printf("date.year=%d,\ndate.month=%d,\ndate.day=%d\n", date.year, date.month, date.day);
@@ -545,7 +531,6 @@ void addAppointment(struct Appointment* appoints, int maxAppointments,
             printf("\n*** Appointment scheduled! ***\n\n");
             flag = 0;
             valid = 0;
-         // } else if (valid == 1 && flag == 1) {
          } else {
             printf("\nERROR: Appointment timeslot is not available!\n\n");
             flag = 1;
@@ -625,7 +610,6 @@ void bubbleSort(struct Appointment appoints[], int max) {
 }
 
 void inputDate(struct Date *date, struct Time *time, int withDate, int withTime) {
-   // int hour, mins;
    int lastDay = DATE_BIG;
    if (withDate) {
       printf("Year        : ");
@@ -784,7 +768,6 @@ void inputPhoneData(struct Phone* phone) {
 // Import patient data from file into a Patient array (returns # of records read)
 /// ToDo:
 int importPatients(const char* datafile, struct Patient patients[], int max) {
-   // max = 20;
    FILE *fp = NULL;
    int i = 0;
    fp = fopen(datafile, "r");
@@ -801,7 +784,6 @@ int importPatients(const char* datafile, struct Patient patients[], int max) {
 // Import appointment data from file into an Appointment array (returns # of records read)
 // ToDo:
 int importAppointments(const char* datafile, struct Appointment appoints[], int max) {
-   // max = 20;
    int i = 0, count = 0;
    FILE *fp = NULL;
    fp = fopen(datafile, "r");
